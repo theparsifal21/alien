@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alien</title>
+    <style>
+        body {
+            background-color: darkgoldenrod;
+        }
+
+        div {
+            background-color: white;
+            border: 1px solid black;
+            width: 300px;
+            padding: 10px;
+            margin:0px auto;
+        }
+    </style>
+    <script>
+        function csere(id, kep) {
+            document.getElementById(id).src = kep;
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="kepek">
+    <img id="kep1" src="alien1.png" onmouseenter="csere('kep1','alien2.png');"
+        onmouseleave="csere('kep1','alien1.png');">
+
+    <img id="kep2" src="alien2.png" onmouseenter="csere('kep2','alien3.png');"
+        onmouseleave="csere('kep2','alien2.png');">
+
+    <img id="kep3" src="alien3.png" onmouseenter="csere('kep3','alien4.png');"
+        onmouseleave="csere('kep3','alien3.png');">
+    </div>
+
+</body>
+
+</html>
